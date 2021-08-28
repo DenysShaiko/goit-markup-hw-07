@@ -49,12 +49,12 @@
     width: 170px;
     height: 92px;
     
+    &:hover .clients__svg{
+        fill: $blue;
+    }
     
 }
 
-.client__href:hover .clients__svg{
-    fill: $blue;
-}
 
 .clients__list{
     width: 170px;
@@ -65,13 +65,15 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+        border: 1px solid $blue;
+        border-radius: 4px;
+    }
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+
 }
 
-.clients__list:hover{
-    border: 1px solid $blue;
-    border-radius: 4px;
-}
-
-.clients__list:not(:last-child){
-    margin-right: 30px;
-}

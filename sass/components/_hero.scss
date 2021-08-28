@@ -45,7 +45,7 @@
 
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size:  $font-size16px;
     line-height: 30px;
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -53,12 +53,10 @@
     padding: 10px 32px; 
     
     border: none;
+    &:hover, &:focus{
+        background-color: #188CE8;
+    }
 }
-
-.hero-title__botton:hover, .hero-title__botton:focus{
-    background-color: #188CE8;
-}
-
 .info-section{
     padding-top: 94px;
     padding-bottom: 0;

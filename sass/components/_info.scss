@@ -31,18 +31,16 @@
 .info-text__list{
     width: 270px;
     padding-left: 1px;
+
+    &:not(:last-child){
+        margin-right: 30px;
+   }
 }
-
-
-.info-text__list:not(:last-child){
-     margin-right: 30px;
-}
-
 .info-text__h3{
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: $font-size14px;
+    line-height: $line-height16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -55,7 +53,7 @@
 .info-text__p{
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: $font-size14px;
     line-height: 24px;
     letter-spacing: 0.03em;
 

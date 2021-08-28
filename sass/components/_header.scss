@@ -52,32 +52,37 @@
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
+
+    & .link {
+        display: block;
+        padding: 32px 0;
+    
+        color: $black;
+        font-style: normal;
+        font-weight: 500;
+        font-size: $font-size14px;
+        line-height: $line-height16px;
+        letter-spacing: 0.02em;
+    }
 }
 
-.site-nav .link {
-    display: block;
-    padding: 22px 0;
 
-    color: $black;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-}
 
 .site-nav__item{
     list-style: none;
+
+    &:last-child{
+        margin-right: 0;
+    }
+    &:not(:last-child){
+        margin-right: 50px;
+    }
 }
 
 
-.site-nav__item:last-child{
-    margin-right: 0;
-}
 
-.site-nav__item:not(:last-child){
-    margin-right: 50px;
-}
+
+
 
 .site-nav li a{
     text-decoration: none;
@@ -102,17 +107,15 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.link.act{
-    color: $blue;
-    position: relative;
+    &.act{
+        color: $blue;
+        position: relative;
+    }
+    &:hover, &:focus{
+        color: $blue;
+    }
 }
-
-.link:hover, .link:focus{
-    color: $blue;
-}
-
 /* contact-links */
 
 .links-contact{
@@ -130,24 +133,23 @@
     display: flex;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: $font-size14px;
+    line-height: $line-height16px;
     letter-spacing: 0.02em;
     color: $grey2;
 
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contact-link:hover .email, .contact-link:hover .tel{
-    fill: $blue;
+    &:hover .email, &:hover .tel{
+        fill: $blue;
+    }
+    
+    &:hover, &:focus{
+        color: $blue;
+    }
 }
-
-.contact-link:hover, .contact-link:focus{
-    color: $blue;
-}
-
 .tel{
     margin-right: 10px;
     width: 10px;
@@ -158,14 +160,10 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        fill: $blue; 
+    }
 }
-
-.tel:hover, .tel:focus{
-    fill: $blue;
-    
-}
-
-
 .email{
    
     margin-right: 10px;
@@ -176,17 +174,12 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        fill: $blue; 
+    }
 }
-
-.email:hover, .email:focus{
-    fill: $blue;
-    
-}
-
-
 .links-contact .item + .item{
-    margin-left: 50px;
-    
+    margin-left: 50px;  
 }
 .links-contact a{
     text-decoration: none;

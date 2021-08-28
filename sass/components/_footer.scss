@@ -38,13 +38,13 @@
 .contact-link-footer-href{
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size:  $font-size14px;
     line-height: 24px;
     list-style: none;
     text-decoration: none;
     letter-spacing: 0.03em;
 
-    color: $grey2;
+    color: $grey-footer;
 
     flex-direction: row;
 
@@ -53,6 +53,9 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
+    &:hover, &:focus{
+        color: $white;
+    }
 }
 
 
@@ -66,9 +69,7 @@
     margin-bottom: 9px;
 }
 
-.contact-link-footer-href:hover, .contact-link-footer-href:focus{
-    color: $white;
-}
+
 
 /* soc footer */
 .footer-div{
@@ -100,13 +101,17 @@ a.soc-team-footer__href{
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+        background-color: $blue;
+    }
 }
 
 .footer-social__text{
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: $font-size14px;
+    line-height: $line-height16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin: 0;
@@ -124,10 +129,7 @@ a.soc-team-footer__href{
     fill: $white;
 }
 
-.soc-team-footer__href:hover, .soc-team-footer__href:focus{
-    background-color: $blue;
 
-}
 
 .footer-mail{
     margin-left: 92px;
@@ -141,8 +143,8 @@ a.soc-team-footer__href{
 .footer-mail-text{
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: $font-size14px;
+    line-height: $line-height16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -191,7 +193,7 @@ a.soc-team-footer__href{
     margin-bottom: 40px;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: $font-size16px;
     line-height: 30px;
     letter-spacing: 0.06em;
 
@@ -206,12 +208,13 @@ a.soc-team-footer__href{
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+        background: #188CE8;
+    }
 }
 
-.button-footer:hover, .button-footer:focus{
-    
-    background: #188CE8;
-}
+
 
 .footer-mail input{
     padding-left: 10px;
